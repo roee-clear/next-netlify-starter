@@ -9,7 +9,7 @@ const CMS = dynamic(
     import('netlify-cms-app').then(async (cms) => {
     //  const widget = await import('netlify-cms-widget-mdx').then((module) => module);
 
-      cms.init({ config });
+      cms.init();
 
     //   cms.registerWidget('mdx', widget.MdxControl, widget.MdxPreview)
     }),
