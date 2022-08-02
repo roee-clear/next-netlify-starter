@@ -15,18 +15,18 @@ const config = {
         label: 'Pages',
         files: [
           {
-            label: 'Home',
-            name: 'home',
-            file: 'content/pages/home.md',
+            label: 'Test',
+            name: 'test',
+            file: 'content/pages/test.md',
             fields: [
               {
-                label: 'Hero Title',
-                name: 'hero_title',
+                label: 'Test Title',
+                name: 'test_title',
                 widget: 'string',
               },
               {
-                label: 'Hero Description',
-                name: 'hero_description',
+                label: 'Test Description',
+                name: 'test_description',
                 widget: 'markdown',
               },
             ],
