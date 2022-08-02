@@ -39,13 +39,18 @@ const config = {
 const CMS = dynamic(
   () =>
     import('netlify-cms-app').then(async (cms) => {
-    //  const widget = await import('netlify-cms-widget-mdx').then((module) => module);
+    //  const widget = await import('netlify-cms-widget-mdx').then((module) => module);      
+      const cmsBranch = window.location.hostname.includes('dev') || window.location.hostname.includes('localhost') ? 'dev' : 'master';
+      config = {...config, backend: {...config.backend, branch: cmsBranch}}
+      console.log({config})
 
       cms.init({config});
 
     //   c ms.registerWidget('mdx', widget.MdxControl, widget.MdxPreview)
     }),
-  { ssr: false, loading: () => <p>Loading Admin...</p> },
+  { ssr: false, loading: () => {    
+    return <p>Loading Admin...</p> },
+  }
 );
 
 const Admin = () => {
