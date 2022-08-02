@@ -1,4 +1,4 @@
 ---
 test_title: Test!
-test_description: Test dev
+test_description: Test dev.
 ---
