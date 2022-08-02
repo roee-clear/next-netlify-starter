@@ -1,4 +1,4 @@
 ---
-test_title: Test real dev
-test_description: Test dev branch
+test_title: Test main
+test_description: Test main branch
 ---
