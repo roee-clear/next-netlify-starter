@@ -11,7 +11,7 @@ const CMS = dynamic(
 
       cms.init();
 
-    //   cms.registerWidget('mdx', widget.MdxControl, widget.MdxPreview)
+    //   c ms.registerWidget('mdx', widget.MdxControl, widget.MdxPreview)
     }),
   { ssr: false, loading: () => <p>Loading Admin...</p> },
 );
